@@ -1,7 +1,9 @@
 <html>
     <head>
         <title>随机数</title>
-        <script type='text/javascript' src='jquery.js'></script>
+        <script src="http://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
         <style>
             .result{
                 font-size: 20px;
@@ -19,13 +21,10 @@
         </div>
     </body>
     <script>
-        $(function(){
-                $('#do').on('click',function(){
-                rand = Math.random();
-                result = rand >0.5? $('#start').val() : $('#end').val()
-                $('.result').text(result)
-            })
+       $('#do').on('click',function(){
+            rand = Math.random();
+            result = rand >0.5? $('#start').val() : $('#end').val()
+            $('.result').text(result)
         })
-        
     </script>
 </html>

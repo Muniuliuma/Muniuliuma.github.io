@@ -19,10 +19,13 @@
         </div>
     </body>
     <script>
-        $('#do').on('click',function(){
-            rand = Math.random();
-            result = rand >0.5? $('#start').val() : $('#end').val()
-            $('.result').text(result)
-        })
+        $(function(){
+                $('#do').on('click',function(){
+                rand = Math.random();
+                result = rand >0.5? $('#start').val() : $('#end').val()
+                $('.result').text(result)
+            })
+        })()
+        
     </script>
 </html>

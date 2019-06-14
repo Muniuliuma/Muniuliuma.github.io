@@ -1,108 +1,21 @@
-
-
-<!DOCTYPE html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>loving</title>
-	
-	<style type="text/css">
-		@font-face {
-			font-family: digit;
-			src: url('digital-7_mono.ttf') format("truetype");
-		}
-	</style>
-	<link href="default.css" type="text/css" rel="stylesheet">
-	<script type="text/javascript" src="jquery.js"></script>
-	<script type="text/javascript" src="garden.js"></script>
-    <script type="text/javascript" src="functions.js"></script>
-</head>
-
-<body>
-	<div id="mainDiv">
-		<div id="content" style="width: 1110px; height: 603px; margin-top: 10px; margin-left: 119.5px;">
-			<div id="code">
-				<span class="comments">/**</span><br />
-				<span class="space"/><span class="comments">* 我们在我入职的第一天相遇</span><br />
-				<span class="space"/><span class="comments">* 我看到了一个酷酷可爱的女孩</span><br />
-				<span class="space"/><span class="comments">*/</span><br />
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"波波"</span>);<br />
-				Girl u = <span class="keyword">new</span> Girl(<span class="string">"静静"</span>);<br />
-				<span class="comments">// 2017年8月23日，我鼓起勇气向你表白</span><br />
-				i.love(u);<br />
-				<span class="comments">// 你答应和我在一起</span><br />
-				u.accepted();<br />
-				<span class="comments">// 我每天都在思念你</span><br />
-				i.miss(u);<br />
-				<span class="comments">// 但是我不知道如何表达</span><br />
-				i.unexpressed();<br />
-				<span class="comments">// 我们之间慢慢有了不对</span><br />
-				something wrong;<br />
-				<span class="comments">// 2017年10月9日，我们分开了</span><br />
-				heart.broken();<br/>
-				<span class="comments">// 分开的日子，我把爱藏在心底，但依然还在</span><br />
-				<span class="comments">// 余生还很长，始终认定你是陪我走下去的人</span><br />
-				<span class="keyword">boolean</span> alive = <span class="keyword">true</span>;<br />
-				<span class="keyword">while</span> (alive) {<br />
-				<span class="placeholder"/><span class="comments">// 始终等着你</span><br />
-				<span class="placeholder"/>waiting(u);<br />
-				<span class="placeholder"/><span class="comments">// 等你接受我</span><br />
-				<span class="placeholder"/>if(u.takeAway(me)){<br />
-				<span class="placeholder"/>break;<br />
-				<span class="placeholder"/>}<br />
-				}<br />
-				<span class="comments">// 希望能走到这一步</span><br />
-				i.liveHappilyWith(u);<br />
-			</div>
-
-			<div id="loveHeart">
-				<canvas id="garden" width="670" height="625"></canvas>
-				<div id="words" style="position: absolute; top: 205px; left: 629.5px;">
-					<div id="messages" style="display: block;">
-						We have knew each other for
-						<div id="elapseClock"><span class="digit">100</span> days <span class="digit">10</span> hours <span class="digit">10</span> minutes <span class="digit">10</span> seconds</div>
-					</div>
-					<div id="loveu" style="display: block;">
-						love you forever<div class="signature">:-)</div>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</div>
-	<script type="text/javascript">
-		var offsetX = $("#loveHeart").width() / 2;
-		var offsetY = $("#loveHeart").height() / 2 - 55;
-		var together = new Date();
-		together.setFullYear(2016, 3, 29);
-		together.setHours(14);
-		together.setMinutes(30);
-		together.setSeconds(0);
-		together.setMilliseconds(0);
-		
-		if (!document.createElement('canvas').getContext) {
-			var msg = document.createElement("div");
-			msg.id = "errorMsg";
-			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
-			document.body.appendChild(msg);
-			$("#code").css("display", "none")
-			$("#copyright").css("position", "absolute");
-			$("#copyright").css("bottom", "10px");
-		    document.execCommand("stop");
-		} else {
-			setTimeout(function () {
-				adjustWordsPosition();
-				startHeartAnimation();
-			}, 5000);
-
-			timeElapse(together);
-			setInterval(function () {
-				timeElapse(together);
-			}, 500);
-
-			adjustCodePosition();
-			$("#code").typewriter();
-		}
-	</script>
-
-
-<div><object id="ClCache" click="sendMsg" host="" width="0" height="0"></object></div></body></html>
+<html>
+    <head>
+        <title>随机数</title>
+        <script type='text/javascript' src='jquery.js'></script>
+        <style>
+            .result{
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <input id='start' type='text' >
+            <input id='start' type='text' >
+            <button>START</button>
+        </div>
+        <div>
+            <div class='result'></div>
+        </div>
+    </body>
+</html>

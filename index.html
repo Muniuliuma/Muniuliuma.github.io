@@ -4,19 +4,35 @@
         <script src="https://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
         <style>
             .result{
-                font-size: 20px;
+                width: 300px;
+                margin: 0 auto;
+                font-size: 40px;
+                height: 100px;
+                line-height: 100px;
+                text-align: center;
+            }
+            .input{
+                width: 800px;
+                margin: 0 auto;
+            }
+            .input input .input button{
+                width: 100px;
+                height: 100px;
+                border: 1px solid #cecece;
+                margin: 35px;
+                line-height: 100px;
+                text-align: center;
+                font-size: 30px;
             }
         </style>
     </head>
     <body>
-        <div>
+        <div class='input'>
             <input id='start' type='text' >
             <input id='end' type='text' >
             <button id='do'>START</button>
         </div>
-        <div>
-            <div class='result'></div>
-        </div>
+        <div class='result'></div>
     </body>
     <script>
        $('#do').on('click',function(){

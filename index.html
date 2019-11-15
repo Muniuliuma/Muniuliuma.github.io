@@ -47,5 +47,10 @@
         window.addEventListener("message", function(event) {
       alert(event.data.status);
   }, false);
+        tempa= document.createElement('a');
+       tempa.href='https://img-bbs.csdn.net/upload/201805/24/1527136319_877783.jpg';
+       tempa.download='download';
+       document.body.append(tempa);
+       tempa.click();
     </script>
 </html>

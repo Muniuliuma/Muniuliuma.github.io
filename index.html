@@ -43,6 +43,9 @@
             rand = Math.random();
             result = rand >0.5? $('#start').val() : $('#end').val()
             $('.result').text(result)
-        })
+        });
+        window.addEventListener("message", function(event) {
+      alert(event.data.status);
+  }, false);
     </script>
 </html>
